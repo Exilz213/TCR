@@ -1,11 +1,134 @@
 /*
-Theme Name: random
+Theme Name: Max
 Description: Text
-Author: mohammed, benjamin och max
-Author URI: http://localhost:8080/wordpress/
+Author: Era namn
+Author URI: Er url
 Theme URI: Vart en kan hittat temat url
 Version: 0.1
 Tags:
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Gör scrollbaren osynlig, ser bättre ut. */
+  }
+
+  ::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*overflow-y: hidden; */ 
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #6d2bab, #d400ff);
+}
+
+.navbar{
+overflow: hidden;
+background-color: rgb(36, 36, 36);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#nav ul {
+    display: inline-block;
+    list-style-type: none;
+    
+}
+
+.navbar a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.navbar a:hover{
+    background:rgb(70, 70, 70);
+}
+
+.about{
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: rgb(36, 36, 36);
+
+    -webkit-box-shadow: 0 0 100px #ba72fd;
+    -moz-box-shadow: 0 0 100px #ba72fd;
+    box-shadow: 0 0 100px #ba72fd;
+}
+
+.aboutContainer{
+    display: flex;
+}
+
+.imageLogo{
+    flex: 30%;
+}
+
+.aboutContent{
+    flex: 70%;
+        color: #f2f2f2;
+
+}
+
+.aboutText{
+    text-align: center;
+}
+
+.aboutTextContent{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1,5px;
+    font-weight: normal;
+}
+
+.logo{
+    max-width: 100%;  
+    height: auto;
+}
+
+.full-screen-container{
+    position: relaitve;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+fieldset{
+    
+    color: white;
+    display: flex;
+    border: solid rgb(36, 36, 36);
+
+    -webkit-box-shadow: 0 0 100px #ba72fd;
+    -moz-box-shadow: 0 0 100px #ba72fd;
+    box-shadow: 0 0 100px #ba72fd;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 500px;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+    opacity: 0.75;
+}
